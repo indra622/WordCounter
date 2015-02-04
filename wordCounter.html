@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+		function clickHandler(str){
+			alert(str.length);
+		}
+		</script>
+	</head>
+	<body>
+		<form name='form1'>
+			<textarea name='countArea' placeholder='type the words' cols='120' rows='30'></textarea>
+			<br>
+			<input type='submit' value='submit' onclick='clickHandler(countArea.value)'>
+		</form>
+	</body>
+</html>
