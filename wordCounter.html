@@ -2,16 +2,25 @@
 <html>
 	<head>
 		<script>
-		function clickHandler(str){
-			alert(str.length);
+		function clickHandler(){
+			var str = document.form1.countArea.value;
+			var strArray = str.split(' ');
+			document.getElementById('result').outerHTML = "<div> <p>the character : "+ str.length + "</p></div>" + "<div><p> the word : "+ strArray.length + "</p></div>";
+
 		}
+
 		</script>
 	</head>
 	<body>
 		<form name='form1'>
 			<textarea name='countArea' placeholder='type the words' cols='120' rows='30'></textarea>
 			<br>
-			<input type='submit' value='submit' onclick='clickHandler(countArea.value)'>
+			<input type='button' value='submit' onclick='clickHandler()'>
+
+			<div id = 'result'>
+
+			</div>
+
 		</form>
 	</body>
 </html>
