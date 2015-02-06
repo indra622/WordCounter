@@ -2,9 +2,11 @@
 <html>
 	<head>
 		<script>
+		<!-- If you click submit button, the function is called -->
 		function clickHandler(){
 			var str = document.form1.countArea.value;
 			var strArray = str.split(' ');
+			<!-- the method called in result div tag-->
 			document.getElementById('result').outerHTML = "<div> <p>the character : "+ str.length + "</p></div>" + "<div><p> the word : "+ strArray.length + "</p></div>";
 
 		}
